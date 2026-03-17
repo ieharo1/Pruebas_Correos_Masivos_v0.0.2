@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende C# desde cero con nuestra guía completa. Tutoriales, ejemplos prácticos y ejercicios.">
+    <meta name="author" content="Isaac Esteban Haro Torres">
+    <title>💻 C# Desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">💻 C# Desde Cero</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>💻 C# Desde Cero - Guía Completa</h1>
+                <p class="hero-subtitle">Aprende C# desde los fundamentos hasta conceptos avanzados</p>
+                <blockquote class="hero-quote">
+                    "C# is a modern, object-oriented, and type-safe programming language."
+                </blockquote>
+                <a href="#temas" class="btn btn-primary">Explorar Temas</a>
+            </div>
+        </section>
+
+        <section id="temas" class="topics">
+            <div class="container">
+                <h2>📖 Temas del Curso</h2>
+                <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+                
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">📌</span>
+                            <h3>Módulo 1: Fundamentos</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema1-1">Introducción a C#</a></li>
+                            <li><a href="#tema1-2">.NET y .NET Core</a></li>
+                            <li><a href="#tema1-3">Variables y tipos</a></li>
+                            <li><a href="#tema1-4">Funciones y métodos</a></li>
+                        </ul>
+                        <a href="#tema1-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">⚙️</span>
+                            <h3>Módulo 2: Intermedio</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema2-1">POO en C#</a></li>
+                            <li><a href="#tema2-2">Colecciones y genéricos</a></li>
+                            <li><a href="#tema2-3">LINQ</a></li>
+                            <li><a href="#tema2-4">Async/await</a></li>
+                        </ul>
+                        <a href="#tema2-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">🚀</span>
+                            <h3>Módulo 3: Avanzado</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema3-1">ASP.NET Core Web API</a></li>
+                            <li><a href="#tema3-2">Entity Framework Core</a></li>
+                            <li><a href="#tema3-3">Blazor</a></li>
+                            <li><a href="#tema3-4">.NET MAUI</a></li>
+                        </ul>
+                        <a href="#tema3-1" class="btn-topic">Ver tema →</a>
+                    </div>
+                </div>
+
+                <div class="topic-content">
+                    <div class="content-detail" id="tema1-1">
+                        <h3>📌 Introducción a C#</h3>
+                        <div class="content-body">
+                            <p><strong>C# (C Sharp)</strong> es un lenguaje de programación orientado a objetos desarrollado por Microsoft como parte de la plataforma .NET.</p>
+                            
+                            <h4>Características:</h4>
+                            <ul>
+                                <li><strong>Tipado estático:</strong> Verificación de tipos en tiempo de compilación</li>
+                                <li><strong>Orientado a objetos:</strong> Clases, herencia, polimorfismo</li>
+                                <li><strong>Multiplataforma:</strong> .NET Core funciona en Windows, Linux, Mac</li>
+                                <li><strong>Moderno:</strong> Características como LINQ, async/await, pattern matching</li>
+                            </ul>
+
+                            <div class="info-box">
+                                <strong>💡 Dato curioso:</strong> C# fue creado por Anders Hejlsberg, quien también creó Turbo Pascal y TypeScript.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema1-2">
+                        <h3>🌐 .NET y .NET Core</h3>
+                        <div class="content-body">
+                            <h4>Diferencias:</h4>
+                            <table class="info-table">
+                                <tr>
+                                    <th>.NET Framework</th>
+                                    <th>.NET Core / .NET 5+</th>
+                                </tr>
+                                <tr>
+                                    <td>Solo Windows</td>
+                                    <td>Cross-platform</td>
+                                </tr>
+                                <tr>
+                                    <td>Código cerrado</td>
+                                    <td>Open source</td>
+                                </tr>
+                                <tr>
+                                    <td>Monolítico</td>
+                                    <td>Modular</td>
+                                </tr>
+                            </table>
+
+                            <h4>Instalar .NET SDK:</h4>
+                            <pre><code># Descargar desde dotnet.microsoft.com
+# Verificar instalación
+dotnet --version
+
+# Crear proyecto
+dotnet new console -n MiApp
+dotnet run</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema1-3">
+                        <h3>📦 Variables y Tipos</h3>
+                        <div class="content-body">
+                            <h4>Tipos de valor:</h4>
+                            <pre><code>int edad = 30;
+double altura = 1.75;
+bool esEstudiante = true;
+char inicial = 'J';
+decimal salario = 1000.50m;</code></pre>
+
+                            <h4>Tipos de referencia:</h4>
+                            <pre><code>string nombre = "Juan";
+var hobbies = new List&lt;string&gt; { "leer", "codificar" };
+var persona = new { Nombre = "Juan", Edad = 30 };</code></pre>
+
+                            <h4>Nullable types:</h4>
+                            <pre><code>int? calificacion = null;
+DateTime? fechaNacimiento = null;</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema1-4">
+                        <h3>🔧 Funciones y Métodos</h3>
+                        <div class="content-body">
+                            <h4>Método básico:</h4>
+                            <pre><code>public string Saludar(string nombre)
+{
+    return $"Hola {nombre}";
+}</code></pre>
+
+                            <h4>Múltiples retornos:</h4>
+                            <pre><code>public (int suma, int resta) Operar(int a, int b)
+{
+    return (a + b, a - b);
+}
+
+var resultado = Operar(5, 3);
+Console.WriteLine(resultado.suma); // 8</code></pre>
+
+                            <h4>Expresión lambda:</h4>
+                            <pre><code>Func&lt;int, int&gt; cuadrado = x => x * x;
+Console.WriteLine(cuadrado(5)); // 25</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema2-1">
+                        <h3>🏗️ POO en C#</h3>
+                        <div class="content-body">
+                            <h4>Clase y objeto:</h4>
+                            <pre><code>public class Persona
+{
+    public string Nombre { get; set; }
+    public int Edad { get; private set; }
+
+    public Persona(string nombre, int edad)
+    {
+        Nombre = nombre;
+        Edad = edad;
+    }
+
+    public void Saludar()
+    {
+        Console.WriteLine($"Hola, soy {Nombre}");
+    }
+}</code></pre>
+
+                            <h4>Herencia:</h4>
+                            <pre><code>public class Empleado : Persona
+{
+    public decimal Salario { get; set; }
+}</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema2-2">
+                        <h3>📚 Colecciones y Genéricos</h3>
+                        <div class="content-body">
+                            <h4>List&lt;T&gt;:</h4>
+                            <pre><code>var numeros = new List&lt;int&gt; { 1, 2, 3, 4, 5 };
+numeros.Add(6);
+numeros.Remove(1);</code></pre>
+
+                            <h4>Dictionary&lt;TKey, TValue&gt;:</h4>
+                            <pre><code>var edades = new Dictionary&lt;string, int&gt;
+{
+    { "Juan", 30 },
+    { "Maria", 25 }
+};
+
+edades["Pedro"] = 35;</code></pre>
+
+                            <h4>HashSet&lt;T&gt;:</h4>
+                            <pre><code>var unicos = new HashSet&lt;int&gt; { 1, 2, 2, 3 };
+// Resultado: { 1, 2, 3 }</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema2-3">
+                        <h3>🔍 LINQ</h3>
+                        <div class="content-body">
+                            <h4>Query syntax:</h4>
+                            <pre><code>var pares = from n in numeros
+              where n % 2 == 0
+              select n;</code></pre>
+
+                            <h4>Method syntax:</h4>
+                            <pre><code>var pares = numeros.Where(n => n % 2 == 0)
+                              .OrderBy(n => n)
+                              .ToList();</code></pre>
+
+                            <h4>Operaciones comunes:</h4>
+                            <pre><code>var suma = numeros.Sum();
+var promedio = numeros.Average();
+var maximo = numeros.Max();
+var primero = numeros.First();</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema2-4">
+                        <h3>⚡ Async/Await</h3>
+                        <div class="content-body">
+                            <h4>Método asíncrono:</h4>
+                            <pre><code>public async Task&lt;string&gt; ObtenerDatosAsync()
+{
+    await Task.Delay(1000);
+    return "Datos obtenidos";
+}</code></pre>
+
+                            <h4>Uso con HttpClient:</h4>
+                            <pre><code>public async Task&lt;string&gt; GetAsync(string url)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync(url);
+    return await response.Content.ReadAsStringAsync();
+}</code></pre>
+
+                            <div class="info-box">
+                                <strong>⚠️ Importante:</strong> Usa async all the way. No mezcles código síncrono y asíncrono.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema3-1">
+                        <h3>🌐 ASP.NET Core Web API</h3>
+                        <div class="content-body">
+                            <h4>Controller:</h4>
+                            <pre><code>[ApiController]
+[Route("api/[controller]")]
+public class UsersController : ControllerBase
+{
+    [HttpGet]
+    public IActionResult Get()
+    {
+        return Ok(new[] { "Juan", "Maria" });
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetById(int id)
+    {
+        return Ok(new { Id = id, Name = "Juan" });
+    }
+}</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema3-2">
+                        <h3>🗄️ Entity Framework Core</h3>
+                        <div class="content-body">
+                            <h4>DbContext:</h4>
+                            <pre><code>public class AppDbContext : DbContext
+{
+    public DbSet&lt;User&gt; Users { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+    {
+        options.UseSqlServer(connectionString);
+    }
+}</code></pre>
+
+                            <h4>Consultas:</h4>
+                            <pre><code>var users = await context.Users
+    .Where(u => u.Age > 18)
+    .ToListAsync();</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema3-3">
+                        <h3>🎯 Blazor</h3>
+                        <div class="content-body">
+                            <h4>Componente Blazor:</h4>
+                            <pre><code>@page "/counter"
+
+&lt;h3&gt;Counter&lt;/h3&gt;
+&lt;p&gt;Current count: @currentCount&lt;/p&gt;
+&lt;button class="btn btn-primary" @onclick="IncrementCount"&gt;
+    Click me
+&lt;/button&gt;
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}</code></pre>
+
+                            <div class="info-box">
+                                <strong>💡 Tip:</strong> Blazor permite crear aplicaciones web interactivas con C# en lugar de JavaScript.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <div class="content-detail" id="tema3-4">
+                        <h3>📱 .NET MAUI</h3>
+                        <div class="content-body">
+                            <h4>Página MAUI:</h4>
+                            <pre><code>public class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        var label = new Label
+        {
+            Text = "Hello, .NET MAUI!",
+            HorizontalOptions = LayoutOptions.Center,
+            VerticalOptions = LayoutOptions.Center
+        };
+
+        Content = label;
+    }
+}</code></pre>
+
+                            <h4>Crear proyecto:</h4>
+                            <pre><code>dotnet new maui -n MiApp
+dotnet build</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenido" class="content">
+            <div class="container">
+                <h2>📚 Contenido del Curso</h2>
+                <div class="modules">
+                    <div class="module">
+                        <h3>Módulo 1: Fundamentos</h3>
+                        <ul>
+                            <li>Introducción a C#</li>
+                            <li>.NET y .NET Core</li>
+                            <li>Variables y tipos</li>
+                            <li>Funciones y métodos</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                    <div class="module">
+                        <h3>Módulo 2: Intermedio</h3>
+                        <ul>
+                            <li>POO en C#</li>
+                            <li>Colecciones y genéricos</li>
+                            <li>LINQ</li>
+                            <li>Async/await</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                    <div class="module">
+                        <h3>Módulo 3: Avanzado</h3>
+                        <ul>
+                            <li>ASP.NET Core Web API</li>
+                            <li>Entity Framework Core</li>
+                            <li>Blazor</li>
+                            <li>.NET MAUI</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos" class="examples">
+            <div class="container">
+                <h2>📝 Ejemplos Rápidos</h2>
+                <div class="code-block">
+                    <h3>Clase en C#</h3>
+                    <pre><code class="language-csharp">public class Persona
+{
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+
+    public void Saludar()
+    {
+        Console.WriteLine($"Hola, soy {Nombre}");
+    }
+}</code></pre>
+                </div>
+                <div class="code-block">
+                    <h3>LINQ Example</h3>
+                    <pre><code class="language-csharp">var numeros = new List&lt;int&gt; { 1, 2, 3, 4, 5 };
+var pares = numeros.Where(n => n % 2 == 0).ToList();</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="resources">
+            <div class="container">
+                <h2>📖 Recursos Adicionales</h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Documentación Oficial</h4>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/dotnet/csharp/" target="_blank">Microsoft C# Docs</a></li>
+                            <li><a href="https://docs.microsoft.com/dotnet/" target="_blank">.NET Documentation</a></li>
+                            <li><a href="https://dotnet.microsoft.com/" target="_blank">.NET Website</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>Visual Studio 2022</li>
+                            <li>VS Code + C# extension</li>
+                            <li>ReSharper</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Comunidades</h4>
+                        <ul>
+                            <li><a href="https://dotnet.microsoft.com/community" target="_blank">.NET Community</a></li>
+                            <li>Stack Overflow - C#</li>
+                            <li>Reddit r/csharp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
