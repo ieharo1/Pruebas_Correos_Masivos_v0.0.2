@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #512BD4;
-    --secondary-color: #2B579A;
-    --accent-color: #512BD4;
+    --primary-color: #00b4d8;
+    --secondary-color: #0077b6;
+    --accent-color: #48cae4;
     --text-color: #333;
     --bg-light: #f8f9fa;
     --bg-dark: #212529;
@@ -67,12 +67,12 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
     color: var(--white);
     padding: 150px 0 100px;
     text-align: center;
@@ -118,7 +118,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: #4a25b8;
+    background: #90e0ef;
     transform: translateY(-2px);
 }
 
@@ -245,7 +245,7 @@ h2 {
 
 .topic-card:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 10px 40px rgba(248, 152, 32, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 180, 216, 0.15);
     transform: translateY(-5px);
 }
 
@@ -332,7 +332,7 @@ h2 {
 .info-table tr:nth-child(even) { background: #f8f9fa; }
 
 .info-box {
-    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
     border-left: 4px solid var(--primary-color);
     padding: 1.5rem;
     border-radius: 0 10px 10px 0;
